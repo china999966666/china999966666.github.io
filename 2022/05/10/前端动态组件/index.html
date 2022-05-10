@@ -22,19 +22,19 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="不停学习">
+  <meta name="description" content="动态组件1.什么是动态组件​      动态组件指的是动态切换组件的显示与隐藏  2.如何实现动态组件的渲染​     VUE提供了内置的组件 ，专门用来实现动态组件的渲染，作用：即组件的占位符，is属性的值，表示要渲染的组件的名字  3. 使用 keep-alive 保持状态​       默认情况下，切换动态组件时无法保持组件的状态。此时可以使用 vue 内置的  组件保持动态组 件的状态 1">
 <meta property="og:type" content="article">
-<meta property="og:title" content="前端">
-<meta property="og:url" content="http://example.com/2022/05/10/%E5%89%8D%E7%AB%AF/index.html">
+<meta property="og:title" content="前端动态组件">
+<meta property="og:url" content="http://example.com/2022/05/10/%E5%89%8D%E7%AB%AF%E5%8A%A8%E6%80%81%E7%BB%84%E4%BB%B6/index.html">
 <meta property="og:site_name" content="清风起">
-<meta property="og:description" content="不停学习">
+<meta property="og:description" content="动态组件1.什么是动态组件​      动态组件指的是动态切换组件的显示与隐藏  2.如何实现动态组件的渲染​     VUE提供了内置的组件 ，专门用来实现动态组件的渲染，作用：即组件的占位符，is属性的值，表示要渲染的组件的名字  3. 使用 keep-alive 保持状态​       默认情况下，切换动态组件时无法保持组件的状态。此时可以使用 vue 内置的  组件保持动态组 件的状态 1">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-05-10T09:01:05.000Z">
-<meta property="article:modified_time" content="2022-05-10T09:01:05.263Z">
+<meta property="article:published_time" content="2022-05-10T09:08:00.000Z">
+<meta property="article:modified_time" content="2022-05-10T09:13:49.098Z">
 <meta property="article:author" content="清风">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2022/05/10/%E5%89%8D%E7%AB%AF/">
+<link rel="canonical" href="http://example.com/2022/05/10/%E5%89%8D%E7%AB%AF%E5%8A%A8%E6%80%81%E7%BB%84%E4%BB%B6/">
 
 
 <script id="page-configurations">
@@ -47,7 +47,7 @@
   };
 </script>
 
-  <title>前端 | 清风起</title>
+  <title>前端动态组件 | 清风起</title>
   
 
 
@@ -177,7 +177,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/10/%E5%89%8D%E7%AB%AF/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/10/%E5%89%8D%E7%AB%AF%E5%8A%A8%E6%80%81%E7%BB%84%E4%BB%B6/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://w.wallhaven.cc/full/v9/wallhaven-v91858.jpg">
@@ -190,7 +190,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          前端
+          前端动态组件
         </h1>
 
         <div class="post-meta">
@@ -199,8 +199,9 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2022-05-10 17:01:05" itemprop="dateCreated datePublished" datetime="2022-05-10T17:01:05+08:00">2022-05-10</time>
+              <time title="创建时间：2022-05-10 17:08:00 / 修改时间：17:13:49" itemprop="dateCreated datePublished" datetime="2022-05-10T17:08:00+08:00">2022-05-10</time>
             </span>
 
           
@@ -221,7 +222,23 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        
+        <h2 id="动态组件"><a href="#动态组件" class="headerlink" title="动态组件"></a>动态组件</h2><h3 id="1-什么是动态组件"><a href="#1-什么是动态组件" class="headerlink" title="1.什么是动态组件"></a>1.什么是动态组件</h3><p>​      动态组件指的是动态切换组件的显示与隐藏 </p>
+<h3 id="2-如何实现动态组件的渲染"><a href="#2-如何实现动态组件的渲染" class="headerlink" title="2.如何实现动态组件的渲染"></a>2.如何实现动态组件的渲染</h3><p>​     VUE提供了内置的<component>组件 ，专门用来实现动态组件的渲染，作用：即组件的占位符，is属性的值，表示要渲染的组件的名字 </p>
+<h3 id="3-使用-keep-alive-保持状态"><a href="#3-使用-keep-alive-保持状态" class="headerlink" title="3. 使用 keep-alive 保持状态"></a><strong>3. 使用 keep-alive 保持状态</strong></h3><p>​       默认情况下，切换动态组件时无法保持组件的状态。此时可以使用 vue 内置的 <keep-alive> 组件保持动态组 件的状态</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;keep-alive&gt;</span><br><span class="line">        <span class="language-xml"><span class="tag">&lt;<span class="name">component</span> <span class="attr">:is</span>=<span class="string">&quot;conName&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">component</span>&gt;</span></span></span><br><span class="line">  &lt;/keep-alive&gt;</span><br></pre></td></tr></table></figure>
+
+<p>当组件第一次被创建的时候，就会执行created生命周期，也会执行activated生命周期</p>
+<p>当组件被激活的时候，只会触发activated生命周期，不会再触发created，因为此时并没有去创造一个组件</p>
+<h3 id="4-keep-alive的include属性"><a href="#4-keep-alive的include属性" class="headerlink" title="4.keep-alive的include属性"></a>4.keep-alive的include属性</h3><p>  include 属性用来指定：只有名称匹配的组件会被缓存。多个组件名之间使用英文的逗号分隔</p>
+<p>  exclude属性可以用来排除组件被缓存即指定让某个组件不被缓存，然后其他被缓存，但是include和exclude不能同时使用</p>
+<p>附：name可以指定为组件指定名称，使用name后组件的名称变为name所表示的名称.</p>
+<p>当提供了name属性之后，组件的名称，就是name属性的值</p>
+<ol>
+<li><p>组件的注册名称的主要应用场景是以标签的形式把注册好的组件，渲染和使用到页面结构之中</p>
+<p>2.组件生命时候的”name”名称的主要应用场景：结合<keep-alive>标签实现组件缓存功能以及在调试工具中看到name的名称</p>
+</li>
+</ol>
+
     </div>
 
     
@@ -298,6 +315,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8A%A8%E6%80%81%E7%BB%84%E4%BB%B6"><span class="nav-number">1.</span> <span class="nav-text">动态组件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E4%BB%80%E4%B9%88%E6%98%AF%E5%8A%A8%E6%80%81%E7%BB%84%E4%BB%B6"><span class="nav-number">1.1.</span> <span class="nav-text">1.什么是动态组件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%8A%A8%E6%80%81%E7%BB%84%E4%BB%B6%E7%9A%84%E6%B8%B2%E6%9F%93"><span class="nav-number">1.2.</span> <span class="nav-text">2.如何实现动态组件的渲染</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E4%BD%BF%E7%94%A8-keep-alive-%E4%BF%9D%E6%8C%81%E7%8A%B6%E6%80%81"><span class="nav-number">1.3.</span> <span class="nav-text">3. 使用 keep-alive 保持状态</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-keep-alive%E7%9A%84include%E5%B1%9E%E6%80%A7"><span class="nav-number">1.4.</span> <span class="nav-text">4.keep-alive的include属性</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -367,7 +385,7 @@
   </div>
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共75字</span>
+  <span class="post-count">博客全站共523字</span>
 </div>
 
     <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
